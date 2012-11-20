@@ -1,0 +1,5 @@
+# FizzBuzz
+awk 'BEGIN{while(i++<100)print(t=(i%3?"":"Fizz")(i%5?"":"Buzz"))?t:i}'
+
+#tail -n 5
+awk '{s=s$0"\n"}NR>5{sub(/[^\n]*\n/,"",s)}END{printf"%s",s}'
