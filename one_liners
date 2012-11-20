@@ -1,5 +1,8 @@
 # FizzBuzz
 awk 'BEGIN{while(i++<100)print(t=(i%3?"":"Fizz")(i%5?"":"Buzz"))?t:i}'
 
-#tail -n 5
+# tail -n 5
 awk '{s=s$0"\n"}NR>5{sub(/[^\n]*\n/,"",s)}END{printf"%s",s}'
+
+# gpa (subject of atcoder)
+awk 'NR==2{while(i++<length())s+=index("DCBA",substr($0,i,1));print s/length()}'
