@@ -1,0 +1,6 @@
+begin
+	var a%1
+	call sub(%2)
+	print %3
+	return %4
+end
